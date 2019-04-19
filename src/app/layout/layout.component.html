@@ -5,7 +5,8 @@
   <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#" [routerLink]="[ '/dashboard']" routerLinkActive="active">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#" [routerLink]="[ '/dashboard']"
+      routerLinkActive="active">
       <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
       </div>
@@ -41,7 +42,7 @@
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Custom Components:</h6>
           <a class="collapse-item" [routerLink]="[ '/buttons' ]" routerLinkActive="active">Buttons</a>
-          <a class="collapse-item"  [routerLink]="[ '/cards' ]" routerLinkActive="active">Cards</a>
+          <a class="collapse-item" [routerLink]="[ '/cards' ]" routerLinkActive="active">Cards</a>
         </div>
       </div>
     </li>
@@ -56,10 +57,10 @@
       <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Custom Utilities:</h6>
-          <a class="collapse-item" href="utilities-color.html">Colors</a>
-          <a class="collapse-item" href="utilities-border.html">Borders</a>
-          <a class="collapse-item" href="utilities-animation.html">Animations</a>
-          <a class="collapse-item" href="utilities-other.html">Other</a>
+          <a class="collapse-item" [routerLink]="[ '/colors' ]" routerLinkActive="active">Colors</a>
+          <a class="collapse-item" [routerLink]="[ '/borders' ]" routerLinkActive="active">Borders</a>
+          <a class="collapse-item" [routerLink]="[ '/animations' ]" routerLinkActive="active">Animations</a>
+          <a class="collapse-item" [routerLink]="[ '/other' ]" routerLinkActive="active">Other</a>
         </div>
       </div>
     </li>
@@ -82,9 +83,9 @@
       <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Login Screens:</h6>
-          <a class="collapse-item" href="login.html">Login</a>
-          <a class="collapse-item" href="register.html">Register</a>
-          <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+          <a class="collapse-item" [routerLink]="[ '/login' ]" routerLinkActive="active">Login</a>
+          <a class="collapse-item" [routerLink]="[ '/register' ]" routerLinkActive="active">Register</a>
+          <a class="collapse-item" [routerLink]="[ '/forgot-password' ]" routerLinkActive="active">Forgot Password</a>
           <div class="collapse-divider"></div>
           <h6 class="collapse-header">Other Pages:</h6>
           <a class="collapse-item" href="404.html">404 Page</a>
