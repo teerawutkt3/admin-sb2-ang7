@@ -9,6 +9,10 @@ import { BordersComponent } from './borders/borders.component';
 import { AnimationsComponent } from './animations/animations.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { TableComponent } from './table/table.component';
+import { Blank404Component } from './blank404/blank404.component';
+import { BlankPageComponent } from './blank-page/blank-page.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -21,6 +25,12 @@ const routes: Routes = [
   { path: 'borders', component: BordersComponent },
   { path: 'animations', component: AnimationsComponent },
   { path: 'other', component: AnimationsComponent },  
+  
+  { path: '404', component: Blank404Component },  
+  { path: 'blank', component: BlankPageComponent },  
+  
+  { path: 'chart', component: ChartComponent },    
+  { path: 'table', component: TableComponent },  
 ];
 
 @NgModule({

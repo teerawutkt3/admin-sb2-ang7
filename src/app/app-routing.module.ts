@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
-import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component'
+import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './layout/layout.module#LayoutModule' },
