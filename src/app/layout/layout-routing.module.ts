@@ -9,7 +9,8 @@ const routes: Routes = [
     path: '', component: LayoutComponent,
     children: [
 
-      { path: '', loadChildren:'../page/page.module#PageModule'},
+      { path: '', loadChildren: '../page/page.module#PageModule' },
+      { path: 'blog', loadChildren: '../blog/blog.module#BlogModule' }
       // {
       //   path: 'components',
       //   loadChildren: '../../page/baiwa/baiwa.module#BaiwaModule'

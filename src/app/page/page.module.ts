@@ -11,6 +11,7 @@ import { TableComponent } from './table/table.component';
 import { Blank404Component } from './blank404/blank404.component';
 import { BlankPageComponent } from './blank-page/blank-page.component';
 import { ChartComponent } from './chart/chart.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -22,11 +23,12 @@ import { ChartComponent } from './chart/chart.component';
     TableComponent,
     Blank404Component,
     BlankPageComponent,
-    ChartComponent
+    ChartComponent,  
   ],
   imports: [
     CommonModule,
-    PageRoutingModule
+    PageRoutingModule,
+    HttpClientModule
   ]
 })
 export class PageModule { }

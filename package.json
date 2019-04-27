@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve --proxy-config proxy.conf.json --open",
+    "serve": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod",
-    "postinstall" : "ng build --prod"
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +22,10 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "body-parser": "^1.19.0",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
+    "mysql": "^2.17.1",
     "path": "^0.12.7",
     "rxjs": "~6.3.3",
     "startbootstrap-sb-admin-2": "^4.0.3",
@@ -51,7 +54,6 @@
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
   },
-
   "engines": {
     "node": "~8.9.1",
     "npm": "~6.0.0"
