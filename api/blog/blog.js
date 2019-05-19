@@ -47,10 +47,25 @@ router.delete('/:id', (req, res) => {
     var id = req.params.id;
     var sql = `DELETE  FROM blog where id = ${id}`;
 
-    con.query(sql, function (err, result) {       
+    con.query(sql, function (err, result) {
         console.log(`Delete blog by id : ${id}`);
     });
     res.json(`Delete blog by id : ${id}`)
+})
+
+// Update :id
+router.put('/', (req, res) => {
+    var id = req.body.id;
+    var title = req.body.title;
+    var description = req.body.description;
+    var update_at = new Date();
+    var sql = `UPDATE blog SET title='${title}', description='${description}', updated_at=${con.escape(update_at)} where id = ${id}`;
+
+
+    con.query(sql, function (err, result) {
+        console.log(`Update blog by id : ${id}`);
+    });
+    res.json(`Update blog by id : ${id}`)
 })
 
 module.exports = router;

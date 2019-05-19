@@ -28,9 +28,12 @@
             <td>{{item.title}}</td>
             <td>{{item.description}}</td>
             <td>
-              <button class="btn btn-primary btn-sm" type="button" (click)="view(item.id)"><i class="fas fa-eye"></i></button>&nbsp;
-              <button class="btn btn-warning btn-sm" type="button" (click)="edit(item.id)"><i class="fas fa-edit"></i></button>&nbsp;
-              <button class="btn btn-danger btn-sm" type="button" (click)="delete(item.id)"><i class="fas fa-trash"></i></button>
+              <button class="btn btn-primary btn-sm" type="button" (click)="view(item.id)"><i
+                  class="fas fa-eye"></i></button>&nbsp;
+              <button class="btn btn-warning btn-sm" type="button" (click)="edit(item.id)"><i
+                  class="fas fa-edit"></i></button>&nbsp;
+              <button class="btn btn-danger btn-sm" type="button" (click)="delete(item.id)"><i
+                  class="fas fa-trash"></i></button>
             </td>
           </tr>
         </tbody>
@@ -48,13 +51,13 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">{{blog.title}}</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        {{blog.description}}
       </div>
 
       <!-- Modal footer -->
